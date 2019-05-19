@@ -1,0 +1,32 @@
+<div class="container">
+	<h1 ng-if='myInfoCtrl.showMessage'>Not Signed Up Yet.  <a ui-sref="public.signup">Sign up Now!</a></h1>
+  <div ng-if="myInfoCtrl.info">
+  	<h1>User Infomation:</h1>
+	    <div>
+	      <br>
+	      <div>
+	        Name: {{myInfoCtrl.info.user.firstname }} {{myInfoCtrl.info.user.lastname}}
+	      </div>
+	      <div>
+	        Email: {{myInfoCtrl.info.user.email}}
+	      </div>
+	      <div>
+	        Phone Number: {{myInfoCtrl.info.user.phone}}
+	      </div>
+	    </div>
+	
+	    <br>
+	    <br>
+	    <br>
+	
+	    <div>
+	      <h3>Your Favorate:</h3>
+	      <br>
+	      <br>
+	      <menu-item menu-item="myInfoCtrl.info.menuItem">
+	      </menu-item>
+	    </div>
+	  </div>
+
+  </div>
+</div>
