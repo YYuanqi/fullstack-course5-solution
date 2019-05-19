@@ -29,6 +29,7 @@ input {
   color: black;
 }
 button {
+  background-color: gray;
   font-size: 24px;
 }
 
